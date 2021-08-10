@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Cash Manager</title>
+</head>
+<body>
+    <div class="card">
+        
+        <h1>Cash Register Manager</h1>
+        
+        <br>
+
+        <p>Enter the bill amount and cash given by the customer 
+            and know minimum number of notes to return.</p>
+
+        <br>
+        <br>
+  
+
+        <div class="bill form-group">
+            <label>Bill Amount</label>
+            <input id="billAmt" type="number" placeholder="Rs.0">
+            <button class="btn nxtBtn">Next</button>
+        </div>
+
+        <div class="givenCash form-group">
+            <label>Paid Amount</label>
+            <input  id="paidAmt" type="number" placeholder="Rs.0">
+            <button class="btn balanceBtn">Check Balance</button>
+        </div>
+
+        <div class="error-msg"></div>
+
+        <div id="balance">
+            <h3>Balance Amount</h3>
+            <table>
+                <thead>
+                    <td><h3>Amount</h3></td>
+                    <td><h3>Number of Notes</h3></td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2000</td>
+                        <td class="noOfNotes"></td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td class="noOfNotes"></td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td class="noOfNotes"></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td class="noOfNotes"></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="noOfNotes"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="noOfNotes"></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="noOfNotes"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
