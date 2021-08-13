@@ -31,6 +31,7 @@ input {
     margin : 1rem;
     width : 30%;
     text-align: center;
+    cursor : pointer;
 }
 
 .givenCash , .error-msg , #balance {
@@ -47,7 +48,6 @@ input {
 }
 
 .card{
-    border : 1px solid black;
     padding : 2rem;
     box-shadow: 10px 10px 15px rgb(196, 198, 201);
     background-color: rgb(252, 8, 199);
