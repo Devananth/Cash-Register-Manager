@@ -12,7 +12,7 @@ var ouputDiv = document.querySelector("#balance");
 
 const noOfNotes = document.querySelectorAll(".noOfNotes");
 
-var notes = [2000 , 500 , 100 , 20 , 10 , 5];
+var notes = [2000 , 500 , 100 , 20 , 10 , 5 , 1];
 
 nextBtn.addEventListener("click" , () => {
     hideError();
