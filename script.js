@@ -16,7 +16,10 @@ var notes = [2000 , 500 , 100 , 20 , 10 , 5 , 1];
 
 nextBtn.addEventListener("click" , () => {
     hideError();
-    if(billAmount.value > 0){
+
+    let amt = billAmount.value;
+
+    if(amt > 0){
         nextBtn.style.display = "none";
         givenCashDiv.style.display = "block";
     }
@@ -36,11 +39,19 @@ checkBtn.addEventListener("click" , () => {
 
     console.log(paid , billed);
 
-    if(paid < billed)
+    if(billed<0)
+    {
+        showError("Enter a valid bill amount");
+        nextBtn.style.display = "inline-block";
+        givenCashDiv.style.display = "none";
+    }
+    else if( paid < billed)
     {
         showError("Paid amount is lesser than the bill amount");
     }
     else{
+        hideError();
+
         var balance = paid - billed;
 
         ouputDiv.style.display = "block";
@@ -48,8 +59,6 @@ checkBtn.addEventListener("click" , () => {
         for(var i = 0 ; i<notes.length; i++){
             balance = calculate(balance , notes[i] , i);
         }
-
-        
     }
 
 });
@@ -84,5 +93,6 @@ function showError(error)
 {
     errorDiv.style.display = "block";
     errorDiv.innerHTML = error;
+    ouputDiv.style.display = "none";
 }
 
