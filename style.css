@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 body {
     max-width: 600px;
     margin : auto;
@@ -67,3 +75,25 @@ td{
     padding : 1rem;
 }
 
+
+.footer-container ul{
+    padding : 2rem;
+    display : flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-container ul li{
+    margin : 1rem;
+}
+
+.footer-container ul li a{
+    text-align: center;
+    font-size : 2rem;
+    /* padding : 2rem;
+    margin: 2rem; */
+}
+
+.footer-container ul li a:hover{
+    border-bottom: 1px solid blue;
+}
